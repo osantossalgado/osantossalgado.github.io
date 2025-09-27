@@ -61,18 +61,6 @@
     });
   });
 
-  const avatar = document.getElementById('avatar');
-  avatar.addEventListener('click', ()=>{
-    const url = prompt('Enter image URL for avatar (or cancel)');
-    if(url){
-      const img = document.createElement('img');
-      img.src = url;
-      img.alt = 'avatar';
-      img.onload = ()=>{ avatar.innerHTML = ''; avatar.appendChild(img); };
-      img.onerror = ()=>{ alert('Image failed to load. Check URL.'); };
-    }
-  });
-
   window.addEventListener('popstate', (e)=>{
     const state = e.state;
     if(state && state.fragment){ loadFragment(state.fragment, false); updateActiveTab(fragmentName(state.fragment)); }
