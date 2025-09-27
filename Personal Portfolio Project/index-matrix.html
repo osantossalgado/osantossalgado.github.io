@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Osman Santos Salgado — Portfolio (Matrix)</title>
+  <link rel="stylesheet" href="assets/css/styles-matrix.css">
+</head>
+<body>
+  <canvas class="matrix" aria-hidden="true"></canvas>
+
+  <div class="app" role="application" aria-labelledby="site-title">
+    <header class="site-header">
+      <div class="brand" id="site-title">
+        <span class="logo" aria-hidden="true"></span>
+        <strong>Osman Santos Salgado</strong>
+        <span class="subtitle">— hacker portfolio</span>
+      </div>
+
+      <nav class="tabs" role="navigation" aria-label="Main">
+        <button class="tab" data-fragment="home.html" data-target="home" aria-current="true">Home</button>
+        <button class="tab" data-fragment="projects.html" data-target="projects">Projects</button>
+        <button class="tab" data-fragment="work.html" data-target="work">Work</button>
+        <button class="tab" data-fragment="certs.html" data-target="certs">Certifications</button>
+        <button class="tab" data-fragment="edu.html" data-target="edu">Education</button>
+      </nav>
+    </header>
+
+    <main class="layout" id="main">
+      <aside class="profile-box" id="profileBox" aria-hidden="false">
+        <div class="profile-inner">
+          <div class="avatar" id="avatar" title="Click to change avatar (URL)">
+            <img src="assets/img/avatar.svg" alt="Osman Santos Salgado avatar">
+          </div>
+          <div class="languages" id="languages">
+            <h3 class="small-heading">Languages</h3>
+            <ul>
+              <li>Spanish</li>
+              <li>English</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <section class="content" id="content" tabindex="0" aria-live="polite">
+        <!-- fragments will be loaded here -->
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/script-matrix.js" defer></script>
+</body>
+</html>
