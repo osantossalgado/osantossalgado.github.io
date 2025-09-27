@@ -42,3 +42,29 @@ canvas.matrix{position:fixed;inset:0;z-index:0;background:black;display:block}
 h2{margin:0 0 10px 0}
 a{color:var(--green);text-decoration:none}
 @media (max-width:900px){body{overflow:auto} .layout{flex-direction:column} .profile-box{width:100%;display:flex;flex-direction:row;gap:12px;padding:12px} .avatar{width:100px;height:100px} .content{min-height:200px}}
+
+/*button for socials*/
+.social-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  broder: 2px solid var(--green);
+  border-radius: 50%
+  padding: 4px;
+  background: black;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 14px rgba(0, 255, 0, 0.8);
+}
